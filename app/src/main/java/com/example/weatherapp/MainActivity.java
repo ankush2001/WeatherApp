@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     TextView resultTextview;
     public void ShowWeather(View view){
         DownloadTask downloadTask = new DownloadTask();
-        downloadTask.execute("pro.openweathermap.org/data/2.5/forecast/hourly?q=london&appid=b1b15e88fa797225412429c1c50c122a1");//plz changed link to use it
+        downloadTask.execute("https//openweathermap.org/data/2.5/forecast/hourly?q="+editText.getText().toString()+"&appid=b1b15e88fa797225412429c1c50c122a1");//plz changed link to use it
     }
     public class DownloadTask extends AsyncTask<String , Void , String>{
 
